@@ -1,0 +1,39 @@
+.Projede geliştirilen ögeler
+** Yeni layoutların eklenmesi
+
+** Layoutlar oluşturulurken intent kullanılması  ve doğru,pas,yanlış ve süre buttonların eklenmesi.
+
+[source,java] 
+public void conButton(View view) {
+        SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar);
+        EditText firstTeam = (EditText)findViewById(R.id.teamFirstEdit);
+        EditText secondEdit = (EditText)findViewById(R.id.teamSecondEdit);
+        finishScore=seekBar.getProgress();
+        spinner = (Spinner) findViewById(R.id.time_select);
+        if(spinner.getSelectedItemId()==0)
+        {
+            countTime=15;
+        }
+        else if(spinner.getSelectedItemId()==1)
+        {
+            countTime=30;
+        }
+        else if(spinner.getSelectedItemId()==2)
+        {
+            countTime=45;
+        }
+        else if(spinner.getSelectedItemId()==3)
+        {
+            countTime=60;
+        }
+        firstTeamName=firstTeam.getText();
+        secondTeamName=secondEdit.getText();
+        Intent intent = new Intent(this,MainActivity.class);
+        intent.putExtra("skor",finishScore);
+        intent.putExtra("first", firstTeam.getText().toString());
+        intent.putExtra("second", secondEdit.getText().toString());
+        intent.putExtra("time",countTime);
+        startActivity(intent);
+    }
+    
+** Firebase Kuruldu Firebase ile bağlantı kuruldu

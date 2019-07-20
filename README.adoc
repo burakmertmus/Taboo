@@ -1,0 +1,13 @@
+** Tabu Oyunu Uygulaması 
+
+* Program Açıklaması : 
+
+Tabu oyununu basit bir şekilde kartsız bir şekilde oynamak için tasarlanmış bir uygulama. Oynamak için tek mobil cihaz yeterli. Uygulamaya giriş yaptığınızda takım adlarını , kaç puanda oyunun son bulması gerektiğini ve süreyi seçebiliyorsunuz. Ardından seçilen periyodlar sürsince doğru veya yanlış bilinenler işaretleniyor ve kişilere oyun sonu ekranında gösteriliyor. 
+
+* Projede Gerçekleştirilen Adımlar :
+Kişiye login layaut'unun gösterilmesi 
+kişinin score ekranına mı yoksa oyun ekranınamı girmek istediğinini seçiminini alınması. 
+Oyun ekranı -> Oyun ekranı seçilirse settings_layaut'unun gelmesi ve kişiden takım isimleri , süre ve bitiş scorenunu girdisinin alınması. 
+Oyna butonu -> Kişi oyna butonuna bastığında CVS dosyası okunur ve bir diziye aktarılır ardından turlar boyunca süre bitene kadar yeni kartlar ekrana gelmeye başlar. Ardından sıra 2. takıma geçer aynı şekilde ilerler. Eğer 2. takım turu bitirdiğinde takımlardan herhangi biri bitiş scoreuna eriştiyse son ekran gelir ve kişilere scorelarını ve kazananları gösterir. 
+
+

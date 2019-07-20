@@ -1,0 +1,68 @@
+= Proje Boyunca Yapılanlar 
+
+== Genel Başlıklar 
+
+* MainActivity Oluşturulması 
+* CSV file'in okutulması 
+* Verilerin diziye aktarılması 
+* 2 grubun oluşturulması 
+* activity_main tasarımı 
+* Buttonların işlevleri 
+* Timer yapılması 
+
+=== Atılan Adımlar
+
+** CSV file okundu ve diziye aktarıldı http://stackoverflow.com/questions/38415680/how-to-parse-csv-file-into-an-array-in-android-studio[KAYNAK] 
+
+[source,java] 
+ List<String[]> resultList = new ArrayList<>();
+        BufferedReader reader  = new BufferedReader(new InputStreamReader(inputStream));
+        try {
+            String csvLine;
+            while ((csvLine = reader.readLine())!=null)
+            {
+                String[] row  = csvLine.split(",");
+                resultList.add(row);
+            }
+        }catch (IOException ex)
+        {
+            throw new RuntimeException("Error in reading CSV File: "+ex);
+        }finally {
+            try {
+                inputStream.close();
+            }
+            catch (IOException e)
+            {
+                throw  new RuntimeException("Error while closing input stream "+e);
+            }
+        }
+            return resultList;
+            
+     ** Timer Countdown oluşturuldu. https://www.youtube.com/watch?v=ZqqP69rJVmg[KAYNAKÇA]
+     
+
+      public CounterClass(long millisInFuture,long countDownInterval)
+        {
+            super(millisInFuture,countDownInterval);
+        }
+        public void onTick(long millisUntilFinished)
+        {**
+        }
+        public void onFinish()
+        {**
+        }
+        }
+        
+        ** Örnek Dataset 
+[width="40%",frame="topbot",options="header,footer"]
+|======================
+|Word |Forbidden|Forbidden |Forbidden|Forbidden |Forbidden
+|TAVLA |ZAR|OYUN |YENMEK|MARS |KAPI
+|GOOGLE |ARAMA MOTORU|BİLGİSAYAR |İNTERNET|SİTE |SAYFA
+|BILL GATES |ZENGİN|MICROSOFT |PARA|PC |WINDOWS
+|OKEY |ZAR|ISTAKA |TAŞ|4 KİŞİ |OYUN
+|======================
+
+        
+        *** Devem Edicek
+            

@@ -1,0 +1,21 @@
+** GUI
+
+Tablet ve telefonlarda hem yatay hem de dikey olarak çalışacak şekilde LAYOUT tasarımlarının yapılması.
+
+Relative Linear vb. Layoutların kullanılması
+
+Resimlerin farklı çözünürlüklere göre hazırlanarak projeye eklenmesi 
+
+Farklı drawable klasörleri oluşturup farklı çözünürlükteki resimleri ekleyerek resmin birden çok çözünürlükteki telefonlarda aynı boyutlarda gösterilmesinin sağlanması
+
+Bunun için :  proje klasörü > app > src > main > res  altında bulunan Drawable klasörlerinden eksik olan çözünürlükte ki klasörleri eklenmesi gerekmektedir. 
+
+Hazırladığınız bir resmi dosyasını https://romannurik.github.io/AndroidAssetStudio/   adresinden uygun çözünürlüklere göre kolayca hazırlamanız mümkündür.  
+
+
+** WEB SERVİCE 
+
+Web servis kullanılması ve web servisin öğrenci tarafından yazılması gerekmektedir. Hazır web servisler kabul edilmeyecektir. Online çalışan web servisler tercih edilecektir. Yerelde çalışacak web servislerin okulda son hafta dersteki sunum sırasında problemsiz olarak gösterilmesi beklenmektedir. Sunum sırasında gösterilemeyen yerelde çalışan web servislerde kabul edilmeyecektir. 
+
+Web servis için kullanılabilecek sunucuları : education.github.com üzerinden aldığınız indirimle digitalocean, amazon aws, microsoft azure ve google cloud servislerinden kullanabilirsiniz. 
+
